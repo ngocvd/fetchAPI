@@ -5,13 +5,13 @@ import http from '@ngocvd/fetchapi'
 http.defaults.baseURL = 'http://localhost/api';
 http.defaults.token = document.head.querySelector('meta[name="csrf-token"]');
 
-#Upload file:
+**#Upload file:**
 
 var fileObj = param.file;   //get file content from a form
 var form = new FormData();
 form.append('logo', fileObj);
 
-this.$http.upload("/api/api-url", form).subscribe({
+**this.$http.upload("/api/api-url", form).subscribe({
     next: (data) => {
         if (data.hasOwnProperty("result")) {
             this.logo = data.result.logo;
@@ -34,12 +34,12 @@ this.$http.upload("/api/api-url", form).subscribe({
         });
         console.error("There was an error!", error);
     },
-});
+});**
 
 #Get data:
 
 
-this.$http.get("/api/api-url").subscribe({
+**this.$http.get("/api/api-url").subscribe({
     next: (data) => {
         if (data.hasOwnProperty("result")) {
             this.logo = data.result.logo;
@@ -62,10 +62,10 @@ this.$http.get("/api/api-url").subscribe({
         });
         console.error("There was an error!", error);
     },
-});
+});**
 
 #Post data
-this.$http.post("/api/api-url", {
+**this.$http.post("/api/api-url", {
                 lienhe: 'this.lienhe',
     })
     .subscribe({
@@ -91,4 +91,4 @@ this.$http.post("/api/api-url", {
         });
         console.error("There was an error!", error);
     },
-});
+});**
