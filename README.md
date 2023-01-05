@@ -5,6 +5,8 @@ import http from '@ngocvd/fetchapi'
 http.defaults.baseURL = 'http://localhost/api';
 http.defaults.token = document.head.querySelector('meta[name="csrf-token"]');
 
+#Upload file:
+
 var fileObj = param.file;   //get file content from a form
 var form = new FormData();
 form.append('logo', fileObj);
@@ -34,6 +36,8 @@ this.$http.upload("/api/api-url", form).subscribe({
     },
 });
 
+#Get data:
+
 
 this.$http.get("/api/api-url").subscribe({
     next: (data) => {
@@ -60,6 +64,7 @@ this.$http.get("/api/api-url").subscribe({
     },
 });
 
+#Post data
 this.$http.post("/api/api-url", {
                 lienhe: 'this.lienhe',
     })
