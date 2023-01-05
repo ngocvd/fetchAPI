@@ -1,0 +1,25 @@
+{
+  "name": "@ngocvd/fetchapi",
+  "version": "1.0.0",
+  "description": "wrapper for fromFetch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngocvd/fetchAPI.git"
+  },
+  "keywords": [
+    "fetch"
+  ],
+  "author": "ngocvd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngocvd/fetchAPI/issues"
+  },
+  "homepage": "https://github.com/ngocvd/fetchAPI#readme",
+  "dependencies": {
+    "rxjs": "^7.8.0"
+  }
+}
