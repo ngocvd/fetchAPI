@@ -5,8 +5,10 @@ import http from '@ngocvd/fetchapi'
 http.defaults.baseURL = 'http://localhost/api';
 http.defaults.token = document.head.querySelector('meta[name="csrf-token"]');
 
+```
 **#Upload file:**
 
+```javascript
 var fileObj = param.file;   //get file content from a form
 var form = new FormData();
 form.append('logo', fileObj);
@@ -35,10 +37,11 @@ this.$http.upload("/api/api-url", form).subscribe({
         console.error("There was an error!", error);
     },
 });
+```
 
 #Get data:
 
-
+```javascript
 this.$http.get("/api/api-url").subscribe({
     next: (data) => {
         if (data.hasOwnProperty("result")) {
@@ -63,8 +66,10 @@ this.$http.get("/api/api-url").subscribe({
         console.error("There was an error!", error);
     },
 });
-
+```
 #Post data
+
+```javascript
 this.$http.post("/api/api-url", {
                 lienhe: 'this.lienhe',
     })
