@@ -6,7 +6,7 @@ http.defaults.baseURL = 'http://localhost/api';
 http.defaults.token = document.head.querySelector('meta[name="csrf-token"]');
 
 ```
-**#Upload file:**
+#Upload file:
 
 ```javascript
 var fileObj = param.file;   //get file content from a form
